@@ -1,0 +1,41 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Authors: Lifang He, Xiangnan Kong, Philip S. Yu, Ann B. Ragin, Zhifeng Hao, Xiaowei Yang %                                         
+% Email : lifanghescut@gmail.com                                                           %
+% Affiliation: School of Computer Science and Engineering, South                           %
+%              China University of Technology, Guangzhou 510630                            %
+% Date: 11/12/2012                                                                         %
+%                                                                                          % 
+% Copyright (c) 2012  Lifang He - All rights reserved                                      %
+% It mustn't be distributed without prior permission of the author                         %
+% The author is not responsible for implications from the                                  %
+% use of this software. You can run it at your own risk.                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This is sample implementation of DuSK: A Dual Structure-preserving Kernel for Supervised Tensor Learning with Applications to Neuroimages. Please cite as  
+
+    Lifang He, Xiangnan Kong, Philip S. Yu, Ann B. Ragin, Zhifeng Hao, Xiaowei Yang
+    "DuSK: A Dual Structure-preserving Kernel for Supervised Tensor Learning with Applications to Neuroimages"
+    Proceedings of the 14th SIAM International Conference on Data Mining (SDM14), 2014.
+    http://.pdf
+    
+
+%[Dependencies]%
+  CP tensor factorization Toolbox : 
+    This function needs the CP tensor factorization toolbox (default is cp3_alsls)
+  SVM solver:
+    Libsvm toolbox (default is libsvm-3.17)
+
+%[Table of Contents]%
+Main.m                : demonstrate the algorithms on a CP factorization dataset and show the usages
+Divide.m              : Divide the data into k-fold 
+TrainAverAcc.m        : train optimal support higher-order tensor machine with DuSK kernel
+Ker_DuSK.m            : calculate the DuSK kernel (RBF or linear).
+
+%[Dataset]%
+Data_ADNI.mat         : the CP factorization result of ANDI dataset
+You can factorize each dataset by cp3_alsls toolbox, like Data_ADNI
+     
+
+%[Comment/Question?]%
+Please send your comment (e.g., ways to improve the codes) or question (e.g., 
+difficulty in using the codes) to lifanghescut@gmail.com
